@@ -1,0 +1,149 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /*Border Style*/
+        p.solid {
+            border-style: solid;
+            border-color: #ff0000;
+            border-radius: 5px;
+        }
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        /*Styles the header*/
+        .header {
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+        }
+        /*Navigation Bar*/
+        .navbar {
+            overflow: hidden;
+            background-color: #333
+        }
+            /*style links*/
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+                /*styles the link when mouse on link*/
+                .navbar a:hover {
+                    background-color: #FOFFFF;
+                    color: red;
+                }
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <audio controls autoplay>
+            <source src="staffinfo/Audio/tf2mvm.mp3" />
+        </audio>
+        <h1>Welcome</h1>
+    </div>
+    <div class="navbar">
+        <a href="file:///C:/Users/sogde/Desktop/SchoolSite/UnderConstruction.html">Link</a>
+        <a href="file:///C:/Users/sogde/Desktop/SchoolSite/UnderConstruction.html">Sports</a>
+        <a href="file:///C:/Users/sogde/Desktop/SchoolSite/UnderConstruction.html">Clubs</a>
+        <a href="file:///C:/Users/sogde/Desktop/SchoolSite/Contact.html">Contact</a>
+        <a href="file:///C:/Users/sogde/Desktop/SchoolSite/staff.html">Staff</a>
+        <a href="#" style="float:right">Home</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h1>Hello and welcome to the school of memes</h1>
+                <h5>9/12/2020</h5>
+                <p>
+                    We are happy that you have chosen us to educate your child, and you will be happy too. We have the best education system in the state.
+                    And we will make sure that your child gets the education they need for life
+                </p>
+            </div>
+            <div class="card">
+                <h1>News</h1>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h1>Events</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="footer">
+            <p>This school is obviously fictional and was made as a school project.</p>
+        </div>
+        </div>
+</body>
+</html> 
